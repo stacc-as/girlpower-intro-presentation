@@ -12,10 +12,10 @@
 
 
 # What I use GitHub for
-- Learning by analysing popular code repositories
-- Finding libraries and tools other people have made instead of reinventing the wheel.
-- Sharing code and project to others
-- Building up a portfolio of own projects, staring others, and following interresting persons
+- Learning by analysing popular code repositories 🔬
+- Finding libraries and tools other people have made instead of reinventing the wheel. ⚒️
+- Sharing code and project to others 🥰
+- Building up a portfolio of own projects, staring others, and following interresting persons 🤓
 
 
 
@@ -66,7 +66,7 @@ git commit -m "An awesome feature"
 
 # `add & commit`
 
-![add_commit](slides/add_commit.png)  <!-- .element style="background: white" -->
+![flow](slides/git_flow.png)  <!-- .element style="background: white" -->
 
 
 # Pushing changes
