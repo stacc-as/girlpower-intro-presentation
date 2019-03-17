@@ -7,8 +7,9 @@
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve",
-    "build": "grunt"
+    "dev": "grunt serve",
+    "build": "grunt",
+    "start": "node server.js"
   },
   "author": {
     "name": "Hakim El Hattab",
