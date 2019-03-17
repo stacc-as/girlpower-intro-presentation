@@ -57,13 +57,13 @@ Our local repository consists of trees maintained by git
 
 ## `add & commit`
 
-Propose changes (add it to the Index) by
+- Propose changes (add it to the Index) by
 ```bash
 git add <filename>
 git add *
 ```
 
-To actually commit these changes do:
+- To actually commit these changes do:
 ```bash
 git commit -m "An awesome feature"
 ```
@@ -75,7 +75,8 @@ git commit -m "An awesome feature"
 
 
 ## Pushing changes
-Your canges are now in the HEAD of you local working copy. To send those changes to a remote repository (GitHub):
+- Your canges are now in the HEAD of you local working copy.
+- To send those changes to a remote repository (GitHub):
 ```bash
 git push origin master
 ```
@@ -94,29 +95,33 @@ git push origin <branch>
 
 
 ## `update & merge`
+- Get latest changes and merge them into your working directory
 ```bash
-# Get latest changes and merge them into your working directory
 git pull
-
-# Merge a branch to your selected one
+```
+- Merge a branch to your selected one
+```bash
 git merge <branch>
-
-# Check the difference between two branches
+```
+- Check the difference between two branches
+```bash
 git diff <source_branch> <target_branch>
 ```
 
 
 ## `fetch & rebase`
+- Get latest updates from remote without changing the working directory
+- Unharmful, can do it whenever you want
 ```bash
-# Get latest updates from remote without changing the working directory
-# Harmfull, can do it whenever you want
 git fetch
-
-# Stack your commits on top of the remote's commit,
-# and updates your working directory
+```
+- Stack your commits on top of the remote's commit, and updates your working directory
+```bash
 git rebase
 ```
 
+
+## `merge vs rebase`
 ![rebase_merge](slides/rebase_merge.png)
 
 
@@ -127,28 +132,31 @@ git tag 1.0.0
 
 
 ## Log
+- Commits of certain author
 ```bash
-# Commits of certain author
 git log --author=bob
-
-# Compressed log
+```
+- Compressed log
+```bash
 git log --pretty=oneline
-
-# ASCII art tree of all the branches,
-# decorated with names of tags and branches
+```
+- ASCII art tree of all the branches, decorated with names of tags and branches
+```bash
 git log --graph --oneline --decorate --all
-
-# See only what files have changed
+```
+- See only what files have changed
+```bash
 git log --name-status
 ```
 
 
 ## Replace local changes
+- Replaces the changes in your working tree with the last content in HEAD. Changes already added to the Index, as well as new files, will be kept
 ```bash
-# replaces the changes in your working tree with the last content in HEAD. Changes already added to the Index, as well as new files, will be kept
 git checkout -- <filename>
-
-# Drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it.
+```
+- Drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it.
+```bash
 git fetch origin
 git reset --hard origin/master
 ```
@@ -156,15 +164,15 @@ git reset --hard origin/master
 
 
 ## Git - Tips & tricks
-- built-in git GUI
+- Built-in git GUI
 ```bash
 gitk
 ```
-- use colorful git output
+- Use colorful git output
 ```
 git config --global color.ui true
 ```
-- show log on just one line per commit
+- Show log on just one line per commit
 ```bash
 git config --global format.pretty oneline
 ```
@@ -204,16 +212,28 @@ git config --global alias.adog "log --all --decorate --oneline --graph"
 
 
 
-## REST API's
+# What is a REST API?
+- REST stands for *Representational state transfer*
+- A style of web architecture
+- JSON, XML
+
+
+# How does it work?
+- **Client-server** - The client handles the front end the server handles the backend and can both be replaced independently of each other.
+- **Stateless** - No client data is stored on the server between requests and session state is stored on the client.
+- **Cacheable** - Clients can cache response (just like browsers caching static elements of a web page) to improve performance.
+
+
+## RESTful API's
 A RESTful API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data.
 
 | **URL**          | **HTTP Verb** | **Action** |
 | ---------------- | ------------- | ---------- |
 | /photos/         | GET           | index      |
-| /photos/new      | GET           | new        |
+| /photos/new      | GET           | new*       |
 | /photos          | POST          | create     |
 | /photos/:id      | GET           | show       |
-| /photos/:id/edit | GET           | edit       |
+| /photos/:id/edit | GET           | edit*      |
 | /photos/:id      | PATCH/PUT     | update     |
 | /photos/:id      | DELETE        | destroy    |
 
@@ -246,21 +266,23 @@ git clone something
 
 
 ## Deploy the application
+- Create project
 ```bash
-# Create project
 heroku create
-
-# Push code to heroku remote
+```
+- Push code to heroku remote
+```bash
 git push heroku master
-
-# Scale the application
+```
+- Scale the application
+```bash
 heroku ps:scale web=1
-
-# Open the application via handy shortcut
+```
+- Open the application via handy shortcut
+```bash
 heroku open
-
-# View logs
+```
+- View logs
+```bash
 heroku logs --tail
 ```
-
-
