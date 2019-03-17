@@ -95,14 +95,29 @@ git push origin <branch>
 
 ## `update & merge`
 ```bash
+# Get latest changes and merge them into your working directory
 git pull
 
+# Merge a branch to your selected one
 git merge <branch>
 
-git add <filename>
-
+# Check the difference between two branches
 git diff <source_branch> <target_branch>
 ```
+
+
+## `fetch & rebase`
+```bash
+# Get latest updates from remote without changing the working directory
+# Harmfull, can do it whenever you want
+git fetch
+
+# Stack your commits on top of the remote's commit,
+# and updates your working directory
+git rebase
+```
+
+![rebase_merge](slides/rebase_merge.png)
 
 
 ## Tagging
