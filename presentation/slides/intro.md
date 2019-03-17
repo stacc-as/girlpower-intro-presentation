@@ -139,6 +139,7 @@ git reset --hard origin/master
 ```
 
 
+
 ## Git - Tips & tricks
 - built-in git GUI
 ```bash
@@ -156,6 +157,15 @@ git config --global format.pretty oneline
 ```bash
 git add -i
 ```
+
+
+# Git - Tips & trics 2
+"**A Dog**" = git log --**a**ll --**d**ecorate --**o**neline --**g**raph
+```bash
+git config --global alias.adog "log --all --decorate --oneline --graph"
+```
+
+![git log](slides/git_log.jpg)
 
 
 
