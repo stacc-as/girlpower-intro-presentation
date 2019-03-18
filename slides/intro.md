@@ -15,7 +15,7 @@ Velkommen til studentworkshop for jenter innen IT. 💖
 ## What is GitHub? 🤔
 - GitHub is a remote storage for Git repositoies
 - Provides a simple way for people to collaborate and contribute to development projects
-- open source &rArr; GitHub
+- Open Source &rArr; GitHub
 
 <img class="plain" src="slides/github_logo.png" height="400wv"/>
 
@@ -24,7 +24,7 @@ Velkommen til studentworkshop for jenter innen IT. 💖
 - Learning by analysing popular code repositories 🔬
 - Finding libraries and tools other people have made instead of reinventing the wheel. ⚒️
 - Sharing code and project to others 🥰
-- Building up a portfolio of own projects, staring others, and following interresting persons 🤓
+- Building up a portfolio of own projects, starring others, and following interresting persons 🤓
 
 
 
@@ -212,7 +212,7 @@ git config --global alias.adog "log --all --decorate --oneline --graph"
 
 
 ## JavaScript & NodeJS
-- Used to be a dynamic run-time language that runs on the client side in a web browsert
+- Used to be a dynamic run-time language that runs on the client-side in a web browser
 - NodeJS makes it possible to run JavaScript on the server side
 
 <img class="plain" src="slides/nodejs.png" height="200wv"/>
