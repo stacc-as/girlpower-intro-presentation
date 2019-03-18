@@ -2,6 +2,13 @@
 
 reveal.js is a framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://revealjs.com/).
 
+## Editing slide
+
+Slides are in the `slides/` folder.
+
+- `\n\n\n` for new slide
+- `\n\n` for new sub slide
+
 ## Setup
 
 0. Install [Node.js](http://nodejs.org/) (4.0.0 or later)
@@ -23,9 +30,9 @@ reveal.js is a framework for easily creating beautiful presentations using HTML.
 
 4. Serve the presentation and monitor source files for changes
    ```sh
-   $ yarn start
+   $ yarn dev
    ```
 
 5. Open <http://localhost:8000> to view your presentation
 
-   You can change the port by using `npm start -- --port=8001`.
+   You can change the port by using `yarn dev -- --port=8001`.
