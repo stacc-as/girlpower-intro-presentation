@@ -1,22 +1,22 @@
 # Girlpower workshop 19. mars
-Velkommen til studentworkshop for jenter innen IT.
+Velkommen til studentworkshop for jenter innen IT. 💖
 
 
 
-## What is Git?
+## What is Git? 🤔
 - Git is a Version Control System (VSC) that keeps track of all the changes to your project files.
 - Allows you and the team to work on the same codebase
 - Git stores every record of every change and makes keeping track of progress easy.
 
 
 
-## What is GitHub?
+## What is GitHub? 🤔
 - GitHub is a remote storage for Git repositoies
 - Provides a simple way for people to collaborate and contribute to development projects
 - open source &rArr; GitHub
 
 
-## What I use GitHub for
+## What I use GitHub for ✔
 - Learning by analysing popular code repositories 🔬
 - Finding libraries and tools other people have made instead of reinventing the wheel. ⚒️
 - Sharing code and project to others 🥰
@@ -24,7 +24,7 @@ Velkommen til studentworkshop for jenter innen IT.
 
 
 
-## Let's Get Started
+## Let's Get Started 💩
 
 - Setting your commit username and email address <!-- .element: class="fragment" -->
 ```bash
@@ -125,7 +125,7 @@ git rebase
 ![rebase_merge](slides/rebase_merge.png)
 
 
-## Tagging
+## Tagging 🏷
 ```bash
 git tag 1.0.0
 ```
@@ -163,7 +163,7 @@ git reset --hard origin/master
 
 
 
-## Git - Tips & tricks
+## Git - Tips & tricks 🧚
 - Built-in git GUI
 ```bash
 gitk
@@ -199,7 +199,8 @@ git config --global alias.adog "log --all --decorate --oneline --graph"
 
 
 
-## Visual Studio Code
+## Visual Studio Code <!-- .element: style="color:white"-->
+<!-- .slide: data-background="slides/vscode.png" style="color:white"-->
 - Best IDE, supports everything
 - Amazing git integration
 - Plugins for everything
@@ -210,12 +211,32 @@ git config --global alias.adog "log --all --decorate --oneline --graph"
 - Used to be a dynamic run-time language that runs on the client side in a web browsert
 - NodeJS makes it possible to run JavaScript on the server side
 
+<img class="plain" src="slides/nodejs.png" height="200wv"/>
 
 
-# What is a REST API?
+
+# What is a REST API? 💎
 - REST stands for *Representational state transfer*
 - A style of web architecture
 - JSON, XML
+```json
+{
+  "basics": {
+    "name": "Kristoffer-Andre Kalliainen",
+    "github": {
+      "username": "181192",
+      "url": "https://github.com/181192"
+    }
+  },
+  "work": [
+    {
+      "company": "Stacc Insight",
+      "position": "Developer",
+      "startDate": "01-12-2018"
+    }
+  ]
+}
+```
 
 
 # How does it work?
@@ -243,6 +264,8 @@ A RESTful API is an application program interface (API) that uses HTTP requests 
 - Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps
 - Great CLI tool that makes you productive
 
+<img class="plain" src="slides/heroku.png" />
+
 
 ## Get started
 Install [heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
@@ -250,6 +273,8 @@ Install [heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-
 ```bash
 heroku login
 ```
+
+<img class="plain" src="https://media.giphy.com/media/zaezT79s3Ng7C/giphy.gif" height="200px">
 
 Maybe a good idea to check that everything is ok:
 ```bash
@@ -263,16 +288,19 @@ git --version
 ```bash
 git clone something
 ```
+<img class="plain" src="https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif" height="400px">
 
 
 ## Deploy the application
-- Create project
+- Create application
 ```bash
-heroku create
+heroku create <name>-dev
 ```
 - Push code to heroku remote
 ```bash
 git push heroku master
+#if failes
+git remote add heroku https://git.heroku.com/<name_of_the_app>.git
 ```
 - Scale the application
 ```bash
@@ -286,3 +314,24 @@ heroku open
 ```bash
 heroku logs --tail
 ```
+
+
+# Create a pipeline
+- Create the app if you haven't
+```bash
+heroku create <name>-dev
+```
+- Create the pipeline
+```bash
+heroku pipelines:create --app <name>-dev --stage development <name>
+```
+- Add staging
+```bash
+heroku pipelines:add --app <name>-staging --stage staging <name>
+```
+- Add production? (Your turn 🤯)
+- Promote application from dev to staging
+```bash
+heroku pipelines:promote --app <name>-dev
+```
+- Promote from stagin to production? (Your turn 🤓)
