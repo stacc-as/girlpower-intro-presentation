@@ -96,6 +96,7 @@ git branch -d feature_x
 
 git push origin <branch>
 ```
+<img class="plain" src="slides/branches.png" height="400wv"/>
 
 
 ## `update & merge`
@@ -112,6 +113,8 @@ git merge <branch>
 git diff <source_branch> <target_branch>
 ```
 
+<img class="plain" src="slides/merge.png" height="200wv"/>
+
 
 ## `fetch & rebase`
 - Get latest updates from remote without changing the working directory
@@ -123,6 +126,8 @@ git fetch
 ```bash
 git rebase
 ```
+
+<img class="plain" src="slides/rebase.svg" height="300wv"/>
 
 
 ## `merge vs rebase`
