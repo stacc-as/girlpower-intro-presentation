@@ -8,12 +8,16 @@ Velkommen til studentworkshop for jenter innen IT. 💖
 - Allows you and the team to work on the same codebase
 - Git stores every record of every change and makes keeping track of progress easy.
 
+<img class="plain" src="slides/git_logo.png" height="200wv"/>
+
 
 
 ## What is GitHub? 🤔
 - GitHub is a remote storage for Git repositoies
 - Provides a simple way for people to collaborate and contribute to development projects
 - open source &rArr; GitHub
+
+<img class="plain" src="slides/github_logo.png" height="400wv"/>
 
 
 ## What I use GitHub for ✔
