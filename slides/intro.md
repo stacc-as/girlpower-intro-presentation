@@ -3,6 +3,70 @@ Velkommen til studentworkshop for jenter innen IT. 💖
 
 
 
+## The power of prototyping
+- They help you visualize your ideas!
+
+- They help you save time!
+
+- Prototyping will be your best friend.
+
+<img class="plain" src="slides/prototyping.jpeg" height="500wv"/>
+
+
+
+## Examples 
+- Mattilbud: scanning the internet for cheap groceries.
+
+- Prisjakt: also scanning the internet for cheap stuff.
+
+- Bybane Nå!: realtime data, plus notifies when your are near a bybane-stop.
+
+- Romplan for UiB: overview of all rooms and buildings at UiB.
+
+- Ladeklar!: information about car charging stations in Norway.
+
+
+
+## What do you want to create? 
+- Visualize your own Linkedin profile using the open API from linkedin.
+
+- Are you moving to a new place? Use the open API from NVE to check the grid power expenses before you sign the contract.
+
+<img class="plain" src="slides/api.png" height="300wv"/>
+
+
+
+## More examples
+- Where is the nearest public toilet in Bergen? Use the open API of public toilets from Bergen Kommune. 
+
+- Are you going on a hike during the winter? Use the open API of avalanches from NVE.
+
+- Has Mattilsynet evaluated the resturant your eating? Use the open API of "smilies" from Mattilsynet.
+
+
+
+## Prototyping
+- Visualize your idea!
+
+- That way you can discuss your concept and get feedback on details.
+
+- It's easier to write code when the concept is captured in a prototype.
+
+<img class="plain" src="slides/1-prototyping-process.jpg" height="300wv"/>
+
+
+
+## Prototyping tools
+- Adobe XD
+
+- Sketch
+
+- Figma 
+
+- Pen and paper also works 🤓
+
+
+
 ## What is Git? 🤔
 - Git is a Version Control System (VSC) that keeps track of all the changes to your project files.
 - Allows you and the team to work on the same codebase
